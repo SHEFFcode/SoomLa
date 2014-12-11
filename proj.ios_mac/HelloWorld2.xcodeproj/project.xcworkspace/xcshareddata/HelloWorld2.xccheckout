@@ -6,8 +6,12 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7024860E-34B5-4FC9-984A-2391D88B6858</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloWorld2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>50893C122315EDFF3378E357C8B22E746085D5E7</key>
+		<string>github.com:SHEFFcode/SoomLa.git</string>
 		<key>7F41E3A86218147E742AB88280559E2C4A837E7E</key>
 		<string>github.com:soomla/cocos2dx-store.git</string>
 		<key>BAD866C9FDD19D65B7E9CC9A77F606F8843B9079</key>
@@ -15,21 +19,25 @@
 		<key>E1C6A175F69FE775E12FC4745DF7A1DEA941144C</key>
 		<string>github.com:vedi/jansson.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>proj.ios_mac/HelloWorld2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>50893C122315EDFF3378E357C8B22E746085D5E7</key>
+		<string>../../..</string>
 		<key>7F41E3A86218147E742AB88280559E2C4A837E7E</key>
-		<string>../extensions/cocos2dx-store</string>
+		<string>../../..extensions/cocos2dx-store/</string>
 		<key>BAD866C9FDD19D65B7E9CC9A77F606F8843B9079</key>
-		<string>../extensions/soomla-cocos2dx-core</string>
+		<string>../../..extensions/soomla-cocos2dx-core/</string>
 		<key>E1C6A175F69FE775E12FC4745DF7A1DEA941144C</key>
-		<string>jansson/</string>
+		<string>../../..external/jansson/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:vedi/jansson.git</string>
+	<string>github.com:SHEFFcode/SoomLa.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E1C6A175F69FE775E12FC4745DF7A1DEA941144C</string>
+	<string>50893C122315EDFF3378E357C8B22E746085D5E7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -39,6 +47,14 @@
 			<string>7F41E3A86218147E742AB88280559E2C4A837E7E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>cocos2dx-store</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50893C122315EDFF3378E357C8B22E746085D5E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HelloWorld2</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
