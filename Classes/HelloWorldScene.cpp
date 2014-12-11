@@ -1,4 +1,8 @@
 #include "HelloWorldScene.h"
+#include "CCError.h"
+#include "CCStoreInventory.h"
+#include "CCStoreService.h"
+#include "CCSoomlaUtils.h"
 
 USING_NS_CC;
 
@@ -82,10 +86,14 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
     return;
 #endif
-
-    Director::getInstance()->end();
+    
+    soomla::CCError *soomlaError = NULL;
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("noads_item_id", &soomlaError);
+    if (soomlaError) {
+        soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
+    }
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    exit(0);
+
 #endif
 }

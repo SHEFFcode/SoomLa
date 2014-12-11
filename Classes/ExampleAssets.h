@@ -14,10 +14,12 @@
 #include "cocos2d.h"
 
 class ExampleAssets: public soomla::CCStoreAssets {
+    
     cocos2d::Array *mCurrencies;
     cocos2d::Array *mGoods;
     cocos2d::Array *mCurrencyPacks;
     cocos2d::Array *mCategories;
+    
 public:
     ExampleAssets():
     mCurrencies(NULL),

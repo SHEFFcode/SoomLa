@@ -562,7 +562,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = MDDB52YB8L;
+						DevelopmentTeam = T6E7R2ZW57;
 					};
 				};
 			};
@@ -767,6 +767,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -789,12 +790,13 @@
 					"$(SRCROOT)/../cocos2d/extensions/cocos2dx-store/build/ios/headers/**",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualGoods\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/PurchaseTypes\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain\" \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla/domain\" \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/build/ios/headers/public\" \"$(SRCROOT)/../extensions/cocos2dx-store/build/ios/headers/public\"/**";
 			};
 			name = Debug;
 		};
@@ -803,6 +805,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -823,12 +826,13 @@
 					"$(SRCROOT)/../cocos2d/extensions/cocos2dx-store/build/ios/headers/**",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualGoods\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain/virtualCurrencies\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/PurchaseTypes\" \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla/domain\" \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla/domain\" \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/build/ios/headers/public\" \"$(SRCROOT)/../extensions/cocos2dx-store/build/ios/headers/public\"/**";
 			};
 			name = Release;
 		};
