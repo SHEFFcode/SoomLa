@@ -30,14 +30,14 @@ bool ExampleAssets::init() {
     
     /** Google MANAGED Items **/
     CCVirtualGood *noAds = CCLifetimeVG::create(
-    CCString::create("No Ads"),// name
-    CCString::create("Removes Ads"), // description
-    CCString::create("noads_item_id"),// item id
-    CCPurchaseWithMarket::createWithMarketItem(CCMarketItem::create(CCString::create("No Ads"),
-    CCInteger::create(CCMarketItem::NONCONSUMABLE),
-    CCDouble::create(1.00))) // the way this virtual good is purchased
-    );
-
+                                                CCString::create("NoAds"),// name
+                                                CCString::create("Removes Ads"), // description
+                                                CCString::create("noads_item_id3"),// item id
+                                                CCPurchaseWithMarket::createWithMarketItem(CCMarketItem::create(CCString::create("noads_item_id3"),
+                                                                                                                CCInteger::create(CCMarketItem::NONCONSUMABLE),
+                                                                                                                CCDouble::create(0.00))) // the way this virtual good is purchased
+                                                );
+    
     
     mGoods = CCArray::create(noAds, NULL);
     mGoods->retain();
