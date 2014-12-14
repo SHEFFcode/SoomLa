@@ -12,6 +12,7 @@
 #include "CCLifetimeVG.h"
 #include "CCPurchaseWithMarket.h"
 #include "Cocos2dxStore.h"
+#include "CCStoreService.h"
 
 
 USING_NS_CC;

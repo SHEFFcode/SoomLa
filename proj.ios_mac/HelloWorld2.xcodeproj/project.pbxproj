@@ -14,6 +14,8 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2B847C301A392C3F00D1D78D /* ExampleAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B847C2E1A392C3F00D1D78D /* ExampleAssets.cpp */; };
 		2B847C311A392C3F00D1D78D /* ExampleAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B847C2E1A392C3F00D1D78D /* ExampleAssets.cpp */; };
+		2BB057EE1A3D032D00B0577F /* libCocos2dXCore Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB129A41A36AB7F00B55CF1 /* libCocos2dXCore Mac.a */; };
+		2BB057EF1A3D032D00B0577F /* libCocos2dXStore Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB1299B1A36AB7400B55CF1 /* libCocos2dXStore Mac.a */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
@@ -126,6 +128,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
+		};
+		2BB057E81A3D032000B0577F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB1299C1A36AB7F00B55CF1 /* Cocos2dXCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8694AD81A1CF680001738B4;
+			remoteInfo = "Cocos2dXCore Mac";
+		};
+		2BB057EA1A3D032000B0577F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB129931A36AB7300B55CF1 /* Cocos2dXStore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F84483F61A2B8AF0002D9EC0;
+			remoteInfo = "Cocos2dXStore Mac";
+		};
+		2BB057F21A3D042700B0577F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB1299C1A36AB7F00B55CF1 /* Cocos2dXCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B3C5EE168C6D0C00161FAA;
+			remoteInfo = Cocos2dXCore;
+		};
+		2BB057F41A3D042700B0577F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB129931A36AB7300B55CF1 /* Cocos2dXStore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B3C5EE168C6D0C00161FAA;
+			remoteInfo = Cocos2dXStore;
 		};
 		4AB129981A36AB7400B55CF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -290,6 +320,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB057EE1A3D032D00B0577F /* libCocos2dXCore Mac.a in Frameworks */,
+				2BB057EF1A3D032D00B0577F /* libCocos2dXStore Mac.a in Frameworks */,
 				1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */,
 				503AE11217EB99EE00D1A890 /* libcurl.dylib in Frameworks */,
 				5087E76717EB910900C73F5D /* libz.dylib in Frameworks */,
@@ -546,6 +578,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				2BB057F31A3D042700B0577F /* PBXTargetDependency */,
+				2BB057F51A3D042700B0577F /* PBXTargetDependency */,
+				2BB057E91A3D032000B0577F /* PBXTargetDependency */,
+				2BB057EB1A3D032000B0577F /* PBXTargetDependency */,
 				1AC6FB16180E9959004C840B /* PBXTargetDependency */,
 			);
 			name = "HelloWorld2 Mac";
@@ -749,6 +785,26 @@
 			name = "cocos2dx iOS";
 			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
 		};
+		2BB057E91A3D032000B0577F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cocos2dXCore Mac";
+			targetProxy = 2BB057E81A3D032000B0577F /* PBXContainerItemProxy */;
+		};
+		2BB057EB1A3D032000B0577F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cocos2dXStore Mac";
+			targetProxy = 2BB057EA1A3D032000B0577F /* PBXContainerItemProxy */;
+		};
+		2BB057F31A3D042700B0577F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cocos2dXCore;
+			targetProxy = 2BB057F21A3D042700B0577F /* PBXContainerItemProxy */;
+		};
+		2BB057F51A3D042700B0577F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cocos2dXStore;
+			targetProxy = 2BB057F41A3D042700B0577F /* PBXContainerItemProxy */;
+		};
 		4AB129D11A36ABB200B55CF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cocos2dXCore;
@@ -861,7 +917,7 @@
 				);
 				INFOPLIST_FILE = mac/Info.plist;
 				LIBRARY_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/cocos2dx-store\"/** \"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../cocos2d/cocos\"";
 			};
 			name = Debug;
 		};
@@ -888,7 +944,7 @@
 				);
 				INFOPLIST_FILE = mac/Info.plist;
 				LIBRARY_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/cocos2dx-store\"/** \"$(SRCROOT)/../../../HelloWorld Backup/HelloWorld2/extensions/cocos2dx-store/Soomla\" \"$(SRCROOT)/../cocos2d/cocos\"";
 			};
 			name = Release;
 		};
